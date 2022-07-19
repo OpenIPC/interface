@@ -3,7 +3,7 @@ import m from 'mithril';
 import './dropdown.css';
 
 interface IAttrs {
-  lables: string[]
+  nestedElems: {}[]
   isOpen: boolean
 }
 
@@ -12,17 +12,20 @@ const DropDown = {
     m(
       'ul',
       { class: `dropdown ${attrs.isOpen ? 'dropdown_show' : 'dropdown_hide'}` },
-      attrs.lables.map((label: string) => m(
-        'li',
-        { class: 'dropdown__item' },
-        m('a',
-          {
-            href: '#',
-            class: 'dropdown__link',
-          },
-            label
-         )
-      ))
+      attrs.nestedElems.map((el: {}) => {
+        const elementName = Object.keys(el)[0];
+        return m(
+          'li',
+          { class: 'dropdown__item' },
+          m('a',
+            {
+              href: el[elementName],
+              class: 'dropdown__link',
+            },
+            elementName,
+          )
+        );
+      })
     ),
 };
 

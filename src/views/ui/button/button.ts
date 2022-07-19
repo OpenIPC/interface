@@ -2,13 +2,15 @@ import m from 'mithril';
 import './button.css';
 
 const Button = {
-  view: ({ attrs }) => {
-    return m(
+  view: ({ attrs }) =>
+    m(
       'button',
-      { name: attrs.label, class: 'button' },
-      attrs.nested ? `${attrs.label}\/` : `${attrs.label}`,
-    );
-  },
+      {
+        name: attrs.label,
+        class: 'button',
+      },
+      attrs.label,
+    ),
 }
 
 export default Button;

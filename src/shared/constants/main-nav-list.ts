@@ -1,15 +1,34 @@
 const navigation = [
-  'Introduction',
-  'Supported Hardware',
-  'Support Open Source',
+  {
+    'Introduction': '/introduction',
+  },
+  {
+    'Supported Hardware': '/supported-hardware',
+  },
+  {
+    'Support Open Source': '/support-open-source',
+  },
   {
     'About': [
-      'Our Team', 'Our Projects', 'Our Channels', 'Our Wiki',
+      {
+        'Our Team': '/our-team',
+      },
+      {
+        'Our Projects': '/our-project',
+      },
+      {
+        'Our Channels': 'our-channels',
+      },
+      {
+        'Our Wiki': '/wiki',
+      },
     ],
   },
   {
     'Tools': [
-      'Firmware Partition Calculator',
+      {
+        'Firmware Partition Calculator': '/firmware-partition-calculator',
+      },
     ],
   },
 ]
