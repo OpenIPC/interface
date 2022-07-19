@@ -1,11 +1,12 @@
 import m from 'mithril';
 import Button from '../ui/button/button';
+import DropDown from './dropdown/dropdown';
 
 import navigation from '../../shared/constants/main-nav-list';
 import './header.css';
 
 const Header = {
-  clicked: 'About',
+  clicked: 'Tools',
   view: () =>
     m( 'header', { class: 'header' },
       m('nav', { class: 'header__navigation' }, [
@@ -19,10 +20,20 @@ const Header = {
                   m(Button, { label: el, nested: false })
                  )
               : m('li', { class: 'header__route header__route_nested' }, [
-                  m(Button, { label: nestedElementName, nested: true }),
-                  m('ul', { class: `header__dropdown ${nestedElementName === Header.clicked ? 'header__dropdown_show' : 'header__dropdown_hide'}` }, [
-                    el[nestedElementName].map((el: string) => m('li', { class: 'header__dropdown-item' }, el))
-                  ])
+                  m(
+                    Button,
+                    {
+                      label: nestedElementName,
+                      nested: true
+                    },
+                  ),
+                  m(
+                    DropDown,
+                    {
+                      lables: el[nestedElementName],
+                      isOpen: nestedElementName === Header.clicked,
+                    },
+                  ),
                 ])
           })
         ]),

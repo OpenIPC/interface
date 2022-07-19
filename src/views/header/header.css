@@ -33,27 +33,3 @@
   color: var(--black);
   font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
 }
-
-.header__dropdown {
-  display: flex;
-  flex-flow: column;
-  gap: 10px 0;
-  width: max-content;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  list-style: none;
-  background: white;
-  border-radius: 4px;
-  padding: 14px;
-  margin: 0;
-  border: 1px solid lightgray;
-}
-
-.header__dropdown_show {
-    display: flex;
-}
-
-.header__dropdown_hide {
-    display: none
-}
