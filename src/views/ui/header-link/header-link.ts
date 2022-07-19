@@ -10,9 +10,8 @@ interface IHeaderLink {
 const HeaderLink = {
   view: ({ attrs }) =>
     m(
-      'a',
+      'a.header-link',
       {
-        class: 'header-link',
         href: attrs.href,
       },
       attrs.label,

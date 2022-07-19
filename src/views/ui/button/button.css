@@ -16,3 +16,38 @@
       opacity: .8;
   }
 }
+
+.button > svg {
+  margin: 0 0 0 3px;
+  transform: translateY(-2px);
+}
+
+.button:hover > svg {
+  animation: triangle-movement 1s linear;
+}
+
+@keyframes triangle-movement {
+  from {
+    transform: translateY(-2px);
+  }
+
+  20% {
+    transform: translateY(-4px);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-3px);
+  }
+
+  80% {
+    transform: translateY(-1px);
+  }
+  
+  to {
+    transform: translateY(-2px);
+  }
+}
