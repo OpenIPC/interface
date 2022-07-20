@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  height: 58px;
   background: var(--blue);
 }
 
@@ -14,10 +13,14 @@
 
 .header__home {
   flex: 1 1 25%;
+  flex: 0 0 116px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .header__routes {
-  flex: 1 1 75%;
+  flex: 1 1 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -28,8 +31,57 @@
   padding: 0;
 }
 
+.header__routes_mobile {
+  width: min(calc(100vw - 20px), 1440px);
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 22px 0;
+  background: var(--blue);
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__routes_mobile_open {
+  max-height: 800px;
+  padding: 10px 0 20px;
+  transition: max-height .4s ease-in,
+              padding .2s ease-in;
+}
+
+.header__routes_mobile_close {
+  max-height: 0;
+  padding: 0;
+  transition: max-height .4s ease-out,
+              padding .2s ease-out;
+}
+
+.header__routes_desktop {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.header__routes_burger {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .header__route {
   position: relative;
   color: var(--black);
   font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
+}
+
+.header__home > svg {
+  width: 116px;
+  height: 32px;
 }

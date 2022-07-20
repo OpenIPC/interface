@@ -1,0 +1,23 @@
+.mobile-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 10px;
+  color: var(--white);
+  opacity: .55;
+  font: normal normal 16px/24px 'IBM Plex Sans', sans-serif;
+  overflow: hidden;
+}
+
+.mobile-dropdown_open {
+  max-height: 400px;
+  padding-top: 10px;
+  transition: max-height .2s ease-in,
+              padding-top .2s ease-in;
+}
+
+.mobile-dropdown_close {
+  max-height: 0;
+  padding-top: 0px;
+  transition: max-height .2s ease-out,
+              padding-top .2s ease-out;
+}

@@ -40,10 +40,14 @@ export default {
           },
         ],
       },
+      {
+        test: /\.svg$/i,
+        loader: 'svg-inline-loader',
+      },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js', '.css'],
+    extensions: ['.ts', '.js'],
   },
 };
 

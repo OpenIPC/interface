@@ -1,9 +1,9 @@
-.button {
+.header-button {
   background: none;
   border: none;
   outline: none;
   font: normal normal 16px/1.1 sans-serif;
-  color: #fff;
+  color: var(--white);
   opacity: .55;
   transition: opacity .2s ease-in;
   margin: 0;
@@ -12,17 +12,19 @@
 
     &:hover {
       cursor: pointer;
-      color: #fff;
+      color: var(--white);
       opacity: .8;
   }
 }
 
-.button > svg {
+.header-button > svg {
+  width: 10px;
+  height: 8px;
   margin: 0 0 0 3px;
   transform: translateY(-2px);
 }
 
-.button:hover > svg {
+.header-button:hover > svg {
   animation: triangle-movement 1s linear;
 }
 
