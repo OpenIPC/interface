@@ -1,0 +1,6 @@
+.paragraph-title {
+  color: var(--black);
+  font: normal normal 28px/1.2 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 24px 0;
+}
