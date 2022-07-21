@@ -1,6 +1,6 @@
 {
   "name": "openipc-website",
-  "type": "module",
+  "type": "commonjs",
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "start": "webpack serve --mode development -o ./public -d eval-source-map",
@@ -11,13 +11,17 @@
     "mithril": "^2.2.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "css-modules-typescript-loader": "^4.0.1",
     "path": "^0.12.7",
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.1",
+    "postcss-mixins": "^9.0.3",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^7.7.2",
+    "postcss-simple-vars": "^6.0.3",
     "style-loader": "^3.3.1",
     "svg-inline-loader": "^0.8.2",
     "ts-loader": "^9.3.1",

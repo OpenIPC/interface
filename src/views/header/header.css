@@ -12,7 +12,6 @@
 }
 
 .header__home {
-  flex: 1 1 25%;
   flex: 0 0 116px;
   display: flex;
   flex-flow: column nowrap;
@@ -44,7 +43,7 @@
   box-sizing: border-box;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: $mobile) {
     display: none;
   }
 }
@@ -64,13 +63,13 @@
 }
 
 .header__routes_desktop {
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     display: none;
   }
 }
 
 .header__routes_burger {
-  @media (min-width: 768px) {
+  @media (min-width: $mobile) {
     display: none;
   }
 }

@@ -1,6 +1,7 @@
-import path from 'path';
+const path = require('path');
+const postcssConfig = require('./postcss.config.js');
 
-export default {
+module.exports = {
   context: path.resolve('src'),
   entry: '/index.ts',
   output: {
@@ -23,6 +24,16 @@ export default {
         exclude: /node_modules/,
       },
       {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
         test: /\.css$/i,
         use: [
           "style-loader",
@@ -30,12 +41,7 @@ export default {
           {
             loader: "postcss-loader",
             options: {
-              postcssOptions: {
-                plugins: [
-                  "postcss-preset-env",
-                  "postcss-nested",
-                ],
-              },
+              postcssOptions: postcssConfig,
             },
           },
         ],
@@ -50,4 +56,3 @@ export default {
     extensions: ['.ts', '.js'],
   },
 };
-
