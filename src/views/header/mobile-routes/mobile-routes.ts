@@ -1,7 +1,7 @@
 import m from 'mithril';
 import { HeaderButton } from '../../ui/buttons/header-button/header-button';
 import { MobileDropdown } from '../mobile-dropdown/mobile-dropdown';
-import HeaderLink from '../../ui/header-link/header-link';
+import { HeaderLink } from '../../ui/links/header-link/header-link';
 
 export const MobileRoutes = {
   openedDropdowns: [],

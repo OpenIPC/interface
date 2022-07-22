@@ -1,7 +1,10 @@
 :root {
   --white: #fff;
+
   --blue: #4c60d8;
   --button-blue: #0e6efd;
+  --button-blue-hover: #0a59cb;
+
   --black: #212529;
   --grey: #6c757d;
   --light-grey: #e9ecef;

@@ -3,7 +3,7 @@ import { HeaderButton } from '../ui/buttons/header-button/header-button';
 import { BurgerButton } from '../ui/buttons/burger-button/burger-button';
 import { MobileRoutes } from './mobile-routes/mobile-routes';
 import DropDown from './dropdown/dropdown';
-import HeaderLink from '../ui/header-link/header-link';
+import { HeaderLink } from '../ui/links/header-link/header-link';
 
 import navigation from '../../shared/constants/main-nav-list';
 import './header.css';
