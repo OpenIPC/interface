@@ -8,10 +8,9 @@ import './main.css';
 
 export const Main = {
   view: () =>
-    m('section.main', [
-      m(PageTitle, { text: pageTitles.introduction }),
-      m(ParagraphTitle, { text: paragraphTitles.introduction.open }),
-      m(ParagraphTitle, { text: paragraphTitles.introduction.why }),
-      m(ParagraphTitle, { text: paragraphTitles.introduction.alliance }),
+    m('main.main',
+      m('section.section', [
+        m(PageTitle, { text: pageTitles.introduction }),
     ]),
+  ),
 };
