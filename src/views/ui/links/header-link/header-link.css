@@ -1,0 +1,20 @@
+.header-link {
+  background: none;
+  border: none;
+  outline: none;
+  font: normal normal 16px/1.1 sans-serif;
+  color: #fff;
+  opacity: .55;
+  transition: opacity .2s ease-in;
+  margin: 0;
+  padding: 0;
+  font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
+  text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      opacity: .8;
+  }
+}
+
