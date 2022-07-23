@@ -15,12 +15,13 @@
 
 .footer__left {
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
 }
 
 .footer__right {
+  padding: 10px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;

@@ -50,7 +50,6 @@
 
 .header__routes_mobile_open {
   max-height: 800px;
-  padding: 10px 0 20px;
   transition: max-height .4s ease-in,
               padding .2s ease-in;
 }
@@ -78,6 +77,14 @@
   position: relative;
   color: var(--black);
   font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
+
+  &:first-child {
+    padding: 10px 0 0 0;
+  }
+
+  &:last-child {
+    padding: 0 0 20px 0;
+  }
 }
 
 .header__home > svg {
