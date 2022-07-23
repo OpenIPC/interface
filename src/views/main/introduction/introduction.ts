@@ -3,6 +3,7 @@ import { ParagraphTitle } from '../../ui/titles/paragraph-title/paragraph-title'
 import { IntroductionMainLink } from '../../ui/links/introduction-main-links/introduction-main-link';
 import { Alliance } from './alliance/alliance';
 import { Supporters } from './supporters/supporters';
+import supporters from '../../../shared/constants/supporters';
 
 import './introduction.css';
 
@@ -10,7 +11,7 @@ export const Introduction = {
   view: ({ attrs: { titles }}) =>
     m('.introduction', [
       m('.introduction__main', [
-        m(ParagraphTitle, { text: titles.open }),
+        m(ParagraphTitle, { title: titles.open }),
         m('p.main-text', 'OpenIPC is a Linux operating system targeting IP cameras with processors from several manufacturers in order to replace that closed, opaque, insecure, often abandoned and unsupported firmware pre-installed by a vendor.'),
         m('p.main-text', 'OpenIPC Firmware comes as binary pre-compiled files for easy installation by end-user. Also, we provide full access to the source files for further development and improvement by any capable programmer willing to contribute to the project. OpenIPC source code is released under one of the most simple open source license agreements: MIT License, giving users express permission to reuse code for any purpose, even as part of a proprietary software. We only ask you politely to contribute your improvements back to us. We would be grateful for any feedback and suggestions.'),
         m(IntroductionMainLink, { label: 'Precompiled binary files' }),
@@ -22,8 +23,8 @@ export const Introduction = {
         m('p.main-text', 'We have some interesting bits though. Our Firmware supports IPEYE cloud storage, streaming video to Youtube and Telegram, using SOCKS5 proxy, setting up a Virtual Tunnel, and more. We also have a few projects focused on premium or specialized hardware, e.g. cameras for drones.'),
         ]),
       m('.introduction__collab', [
-        m(Alliance, { text: titles.alliance }),
-        m(Supporters, { text: titles.supporters }),
+        m(Alliance, { title: titles.alliance }),
+        m(Supporters, { title: titles.supporters, supporters: supporters }),
       ]),
     ]),
 };

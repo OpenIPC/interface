@@ -1,3 +1,4 @@
 .supporters {
-  border: 1px solid green;
+  display: flex;
+  flex-flow: column;
 }

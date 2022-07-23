@@ -1,7 +1,7 @@
 .introduction {
   display: flex;
   flex-flow: row nowrap;
-  gap: 0 2%;
+  gap: 0 4%;
 
   @media(max-width: $mobile) {
     flex-flow: column nowrap;
@@ -10,12 +10,10 @@
 
 .introduction__main {
   flex: 1 10 1000px;
-  border: 1px solid red;
 }
 
 .introduction__collab {
   flex: 1 6 430px;
-  border: 1px solid yellow;
 }
 
 .main-text {

@@ -5,9 +5,9 @@ import allianceIcons from '../../../../shared/icons/alliance/index';
 import './alliance.css';
 
 export const Alliance = {
-  view: ({ attrs: { text }}) =>
+  view: ({ attrs: { title }}) =>
     m('.alliance', [
-      m(ParagraphTitle, { text: text }),
+      m(ParagraphTitle, { title: title }),
       m.trust(allianceIcons.openipc),
       m.trust(allianceIcons.majestic),
   ]),
