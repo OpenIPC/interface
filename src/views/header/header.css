@@ -50,15 +50,12 @@
 
 .header__routes_mobile_open {
   max-height: 800px;
-  transition: max-height .4s ease-in,
-              padding .2s ease-in;
+  transition: max-height .5s cubic-bezier(0.67, 0.05, 0.57, 1);
 }
 
 .header__routes_mobile_close {
   max-height: 0;
-  padding: 0;
-  transition: max-height .4s ease-out,
-              padding .2s ease-out;
+  transition: max-height .5s cubic-bezier(0, 0.7, 0.57, 1);
 }
 
 .header__routes_desktop {

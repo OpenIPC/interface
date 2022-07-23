@@ -2,7 +2,7 @@ import m from 'mithril';
 import { HeaderButton } from '../ui/buttons/header-button/header-button';
 import { BurgerButton } from '../ui/buttons/burger-button/burger-button';
 import { MobileRoutes } from './mobile-routes/mobile-routes';
-import DropDown from './dropdown/dropdown';
+import { DropDown } from './dropdown/dropdown';
 import { HeaderLink } from '../ui/links/header-link/header-link';
 
 import navigation from '../../shared/constants/main-nav-list';

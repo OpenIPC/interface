@@ -7,7 +7,7 @@ interface IAttrs {
   isOpen: boolean
 }
 
-const DropDown = {
+export const DropDown = {
   view: ({ attrs: { isOpen, nestedElems }}) =>
     m(
       'ul.dropdown', {
@@ -27,5 +27,3 @@ const DropDown = {
       })
     ),
 };
-
-export default DropDown;

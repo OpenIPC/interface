@@ -14,5 +14,6 @@ export const paragraphTitles = {
     open: 'OpenIPC is an alternative open firmware for your IP camera.',
     why: 'Why OpenIPC Firmware?',
     alliance: 'Alliance',
+    supporters: 'Supporters',
   },
 };
