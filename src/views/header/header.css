@@ -78,12 +78,14 @@
   color: var(--black);
   font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
 
-  &:first-child {
-    padding: 10px 0 0 0;
-  }
+  @media(max-width: $mobile) {
+    &:first-child {
+      padding: 10px 0 0 0;
+    }
 
-  &:last-child {
-    padding: 0 0 20px 0;
+    &:last-child {
+      padding: 0 0 20px 0;
+    }
   }
 }
 
