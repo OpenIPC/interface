@@ -8,6 +8,7 @@
   font: normal 400 20px/30px 'IBM Plex Sans', sans-serif;
   padding: 8px 0;
   width: 250px;
+  max-height: 30px;
   text-align: center;
   transition: background .2s ease-in;
 

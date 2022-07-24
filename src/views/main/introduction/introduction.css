@@ -6,16 +6,29 @@
   @media(max-width: $mobile) {
     flex-flow: column nowrap;
   }
-}
 
-.introduction__main {
-  flex: 1 10 1000px;
-}
+   &__main {
+    flex: 1 10 1000px;
+  }
 
-.introduction__collab {
-  flex: 1 6 430px;
+  &__collab {
+    flex: 1 6 430px;
+  }
 }
 
 .main-text {
   font: normal normal 16px/24px 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 16px 0;
+}
+
+.main-links {
+  width: 100%;
+  margin: 0;
+  padding: 12px 0 28px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 5px;
 }
