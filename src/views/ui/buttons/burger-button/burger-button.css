@@ -4,9 +4,9 @@
   border: 1px solid var(--light-grey-30);
   border-radius: 8px;
   background: none;
-}
-
-.burger-button > svg {
-  width: 30px;
-  height: 30px;
+  
+  & > svg {
+    width: 30px;
+    height: 30px;
+  }
 }

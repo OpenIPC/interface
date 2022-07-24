@@ -15,18 +15,20 @@
       color: var(--white);
       opacity: .8;
   }
+
+  & > svg {
+    width: 10px;
+    height: 8px;
+    margin: 0 0 0 3px;
+    transform: translateY(-2px);
+  }
+
+  &:hover > svg {
+    animation: triangle-movement 1s linear;
+  }
 }
 
-.header-button > svg {
-  width: 10px;
-  height: 8px;
-  margin: 0 0 0 3px;
-  transform: translateY(-2px);
-}
 
-.header-button:hover > svg {
-  animation: triangle-movement 1s linear;
-}
 
 @keyframes triangle-movement {
   from {

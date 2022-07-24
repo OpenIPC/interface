@@ -16,9 +16,4 @@
     cursor: pointer;
     background: var(--button-blue-hover);
   }
-
-  @media(max-width: $mobile) {
-    width: 200px;
-    font: normal 400 16px/30px 'IBM Plex Sans', sans-serif;
-  }
 }
