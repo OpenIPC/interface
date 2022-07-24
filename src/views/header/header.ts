@@ -20,7 +20,9 @@ const Header = {
     m('header.header', [
       m('nav.header__navigation', [
         m('div.header__home',
-          m.trust(logo),
+          m('a.header__home-link[href=https://openipc.org]',
+            m.trust(logo),
+           ),
          ),
         m('ul.header__routes.header__routes_desktop', [
           navigation.map((el: {}) => {
