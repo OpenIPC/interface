@@ -1,21 +1,18 @@
 export default [
-  { src: 'alarmsystem_mini.png',
+  {
+    src: 'osc_mini.png',
     href: '',
   },
   {
-    src: 'binary-machines_mini.png',
-    href: '',
-  },
-  {
-    src: 'dozor_mini.png',
-    href: '',
-  },
-  {
-    src: 'dvor24_mini.png',
+    src: 'skycam_mini.png',
     href: '',
   },
   {
     src: 'gain_mini.png',
+    href: '',
+  },
+  {
+    src: 'dvor24_mini.png',
     href: '',
   },
   {
@@ -27,15 +24,7 @@ export default [
     href: '',
   },
   {
-    src: 'keytelecom_mini.png',
-    href: '',
-  },
-  {
     src: 'lifecontrol_mini.png',
-    href: '',
-  },
-  {
-    src: 'linuxchenxing_mini.png',
     href: '',
   },
   {
@@ -47,11 +36,7 @@ export default [
     href: '',
   },
   {
-    src: 'osc_mini.png',
-    href: '',
-  },
-  {
-    src: 'skycam_mini.png',
+    src: 'keytelecom_mini.png',
     href: '',
   },
   {
@@ -59,23 +44,11 @@ export default [
     href: '',
   },
   {
-    src: 's-video_mini.png',
-    href: '',
-  },
-  {
     src: 'techno-shield_mini.png',
     href: '',
   },
   {
-    src: 'ufanet_mini.png',
-    href: '',
-  },
-  {
     src: 'vixand_mini.png',
-    href: '',
-  },
-  {
-    src: 'vtl_mini.png',
     href: '',
   },
   {
@@ -86,4 +59,32 @@ export default [
     src: 'yucca_mini.png',
     href: '',
   },
+  {
+    src: 's-video_mini.png',
+    href: '',
+  },
+  {
+    src: 'linuxchenxing_mini.png',
+    href: '',
+  },
+  {
+    src: 'ufanet_mini.png',
+    href: '',
+  },
+  {
+    src: 'vtl_mini.png',
+    href: '',
+  },
+  {
+    src: 'dozor_mini.png',
+    href: '',
+  },
+  { src: 'alarmsystem_mini.png',
+    href: '',
+  },
+  {
+    src: 'binary-machines_mini.png',
+    href: '',
+  },
+  ,
 ];
