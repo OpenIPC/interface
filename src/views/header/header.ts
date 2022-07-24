@@ -9,13 +9,16 @@ import navigation from '../../shared/constants/main-nav-list';
 import './header.css';
 import logo from '../../shared/images/logo.svg';
 
-const Header = {
+export const Header = {
   clicked: undefined,
   toggleMobileRoutes: () => Header.isMobileRoutesOpen = !Header.isMobileRoutesOpen,
   isMobileRoutesOpen: false,
-  clickHandler: (e) => Header.clicked === e.target.name
-    ? Header.clicked = 'undefined'
-    : Header.clicked = e.target.name,
+  clickHandler: (e) => {
+    e.stopPropagation();
+    Header.clicked === e.target.name
+      ? Header.clicked = 'undefined'
+      : Header.clicked = e.target.name;
+  },
   view: () =>
     m('header.header', [
       m('nav.header__navigation', [
@@ -45,5 +48,3 @@ const Header = {
       m(MobileRoutes, { navElements: navigation, isOpen: Header.isMobileRoutesOpen }),
     ]),
 };
-
-export default Header;
