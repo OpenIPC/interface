@@ -1,24 +1,19 @@
 import m from 'mithril';
-import { Header } from './views/header/header';
-import { Main } from './views/main/main';
-import { Footer } from './views/footer/footer';
+import { Layout } from './views/layout/layout';
+import { Introduction } from './views/content/introduction/introduction';
+import { SupportedHardware } from './views/content/supported-hardware/supported-hardware';
+
 import './shared/styles/global.css';
 import './shared/styles/palette.css';
 import './shared/styles/fonts.css';
 
-const pageClickHandler = (e) => {
-  console.log(e.target);
-  if (
-    document.querySelector('.dropdown_show')
-    &&
-    document.querySelector('.dropdown_show') !== e.target
-  ) {
-      Header.clicked = undefined;
-  }
-}
+m.route.prefix = '';
 
-const Page = {
-  view: () => m('div.page', { onclick: pageClickHandler }, [m(Header), m(Main), m(Footer)]),
-};
-
-m.mount(document.body, Page);
+m.route(document.body, '/introduction', {
+  '/introduction':  {
+    view: () => m(Layout, { pageTitle: 'introduction' }, m(Introduction, { pageTitle: 'introduction' })),
+  },
+  '/supported-hardware':  {
+    view: () => m(Layout, { pageTitle: 'supported-hardware' }, m(SupportedHardware, { pageTitle: 'supported-hardware' })),
+  },
+});

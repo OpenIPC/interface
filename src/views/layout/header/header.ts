@@ -1,22 +1,41 @@
 import m from 'mithril';
-import { HeaderButton } from '../ui/buttons/header-button/header-button';
-import { BurgerButton } from '../ui/buttons/burger-button/burger-button';
+import { HeaderButton } from '../../ui/buttons/header-button/header-button';
+import { BurgerButton } from '../../ui/buttons/burger-button/burger-button';
 import { MobileRoutes } from './mobile-routes/mobile-routes';
 import { DropDown } from './dropdown/dropdown';
-import { HeaderLink } from '../ui/links/header-link/header-link';
+import { HeaderLink } from '../../ui/links/header-link/header-link';
 
-import navigation from '../../shared/constants/main-nav-list';
+import navigation from '../../../shared/constants/main-nav-list';
 import './header.css';
-import logo from '../../shared/images/logo.svg';
+import logo from '../../../shared/images/logo.svg';
+
+const pageClickHandler = (e) => {
+  console.log(e.target);
+  if (
+    document.querySelector('.dropdown_show')
+    &&
+    document.querySelector('.dropdown_show') !== e.target
+  ) {
+      console.log('Hide!');
+      console.log(Header.clicked);
+      Header.clicked = null;
+  }
+}
+
+const toggleDropdown = () => {
+  const pageDiv = document.querySelector('.page');
+  pageDiv.addEventListener('click', pageClickHandler);
+}
 
 export const Header = {
+  oncreate: toggleDropdown,
   clicked: undefined,
   toggleMobileRoutes: () => Header.isMobileRoutesOpen = !Header.isMobileRoutesOpen,
   isMobileRoutesOpen: false,
   clickHandler: (e) => {
     e.stopPropagation();
     Header.clicked === e.target.name
-      ? Header.clicked = 'undefined'
+      ? Header.clicked = null
       : Header.clicked = e.target.name;
   },
   view: () =>
