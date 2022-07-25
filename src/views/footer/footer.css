@@ -29,7 +29,7 @@
 }
 
 .footer__bottom {
-  padding: 18px 0 0 0;
+  padding: 18px 0 28px 0;
   flex: 1 1 100%;
   color: var(--black);
   font: normal normal 12px/1.4 'IBM Plex Sans', sans-serif;
