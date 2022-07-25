@@ -2,6 +2,8 @@ import m from 'mithril';
 import { Socials } from '../ui/socials/socials';
 import { Copyright } from '../ui/copyright/copyright';
 
+import footerContent from '../../shared/constants/footer';
+
 import './footer.css';
 
 export const Footer = {
@@ -12,7 +14,7 @@ export const Footer = {
          m(Copyright),
         ),
         m('.footer__right', m(Socials)),
-        m('.footer__bottom', 'The information contained on this site is for general informational purposes only and is not intended to be relied upon by the visitor. All software and firmware available on this site is provided AS IS and for research purposes only. OpenIPC shall not be liable for any loss or damage caused by the use of these files or the use of, or reliance upon, any information contained in this site.'),
+        m('.footer__bottom', footerContent.text),
       ])
     ]),
 };
