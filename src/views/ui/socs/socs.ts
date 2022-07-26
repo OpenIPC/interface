@@ -8,6 +8,6 @@ import './socs.css';
 export const SoCs = {
   view: () =>
     m('ul.socs',
-      socs.map((soc) => m(SoC, { soc }))
+      socs.map((soc, i) => m(SoC, { soc, isChoosen: i===3 }))
      ),
 };

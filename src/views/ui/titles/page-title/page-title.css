@@ -1,5 +1,5 @@
 .page-title {
-  font: normal 700 32px/1.2 'IBM Plex Sans', sans-serif; 
+  font: normal 700 clamp(25px, 7.1vw, 32px)/1.2 'IBM Plex Sans', sans-serif; 
   margin: 0;
   padding: 16px 0 24px;
   color: var(--blue);
