@@ -1,92 +1,91 @@
 .header {
   width: 100%;
   background: var(--blue);
-}
 
-.header__navigation {
-  width: min(calc(100vw - 20px), 1440px);
-  height: 58px;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.header__home {
-  flex: 0 0 116px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-.header__routes {
-  flex: 1 1 auto;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0 16px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header__routes_mobile {
-  width: min(calc(100vw - 20px), 1440px);
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 22px 0;
-  background: var(--blue);
-  box-sizing: border-box;
-  overflow: hidden;
-
-  @media (min-width: $mobile) {
-    display: none;
+  &__navigation {
+    width: min(calc(100vw - 20px), 1440px);
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
   }
-}
 
-.header__routes_mobile_open {
-  max-height: 800px;
-  transition: max-height .5s cubic-bezier(0.67, 0.05, 0.57, 1);
-}
-
-.header__routes_mobile_close {
-  max-height: 0;
-  transition: max-height .5s cubic-bezier(0, 0.7, 0.57, 1);
-}
-
-.header__routes_desktop {
-  @media (max-width: $mobile) {
-    display: none;
+  &__home {
+    flex: 0 0 116px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
-}
 
-.header__routes_burger {
-  @media (min-width: $mobile) {
-    display: none;
-  }
-}
+  &__routes {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-.header__route {
-  position: relative;
-  color: var(--black);
-  font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
+    &_mobile {
+      width: min(calc(100vw - 20px), 1440px);
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 22px 0;
+      background: var(--blue);
+      box-sizing: border-box;
+      overflow: hidden;
 
-  @media(max-width: $mobile) {
-    &:first-child {
-      padding: 10px 0 0 0;
+        @media (min-width: $mobile) {
+          display: none;
+      }
+
+      &_open {
+        max-height: 800px;
+        transition: max-height .5s cubic-bezier(0.67, 0.05, 0.57, 1);
+      }
+
+      &_close {
+        max-height: 0;
+        transition: max-height .5s cubic-bezier(0, 0.7, 0.57, 1);
+      }
     }
 
-    &:last-child {
-      padding: 0 0 20px 0;
+    &_desktop {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &_burger {
+      @media (min-width: $mobile) {
+        display: none;
+      }
     }
   }
-}
 
-.header__home > svg {
-  width: 116px;
-  height: 32px;
+  &__route {
+    position: relative;
+    color: var(--black);
+    font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
+
+    @media(max-width: $mobile) {
+      &:first-child {
+        padding: 10px 0 0 0;
+      }
+
+      &:last-child {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+  &__home > svg {
+    width: 116px;
+    height: 32px;
+  }
 }

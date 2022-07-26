@@ -19,6 +19,7 @@ const pageClickHandler = (e) => {
       console.log('Hide!');
       console.log(Header.clicked);
       Header.clicked = null;
+      m.redraw();
   }
 }
 

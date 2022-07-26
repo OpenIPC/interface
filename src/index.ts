@@ -9,11 +9,35 @@ import './shared/styles/fonts.css';
 
 m.route.prefix = '';
 
-m.route(document.body, '/introduction', {
+m.route(document.body, '/', {
+  '/':  {
+    render: () =>
+      m(Layout, {
+        pageTitle: 'introduction',
+      }, m(
+        Introduction, {
+          pageTitle: 'introduction'
+        })
+      ),
+  },
   '/introduction':  {
-    view: () => m(Layout, { pageTitle: 'introduction' }, m(Introduction, { pageTitle: 'introduction' })),
+    render: () =>
+      m(Layout, {
+        pageTitle: 'introduction'
+      }, m(
+        Introduction, {
+          pageTitle: 'introduction',
+        })
+      ),
   },
   '/supported-hardware':  {
-    view: () => m(Layout, { pageTitle: 'supported-hardware' }, m(SupportedHardware, { pageTitle: 'supported-hardware' })),
+    render: () =>
+      m(Layout, {
+        pageTitle: 'supported-hardware',
+      }, m(
+          SupportedHardware, {
+            pageTitle: 'supported-hardware',
+        })
+      ),
   },
 });

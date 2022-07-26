@@ -7,7 +7,8 @@ export const MobileRoutes = {
   openedDropdowns: [],
   toggleDropdown: (e: any) => {
     if (MobileRoutes.openedDropdowns.includes(e.target.name))
-      MobileRoutes.openedDropdowns = MobileRoutes.openedDropdowns.filter((elName: string) => elName !== e.target.name);
+      MobileRoutes.openedDropdowns = MobileRoutes.openedDropdowns.filter((elName: string) =>
+        elName !== e.target.name);
     else 
       MobileRoutes.openedDropdowns.push(e.target.name);
   },
