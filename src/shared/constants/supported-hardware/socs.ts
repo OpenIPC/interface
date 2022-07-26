@@ -1,4 +1,5 @@
 export default [
+  'Full list',
   'Ambarella',
   'Anyka',
   'Fullhan',

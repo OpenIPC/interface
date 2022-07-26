@@ -1,6 +1,6 @@
 export const pageTitles = {
   introduction: 'Introduction',
-  supportedHardware: 'Supported Hardware by SoC',
+  'supported-hardware': 'Supported Hardware by SoC',
   supportOpenSource: 'Support Open Source',
   team: 'Our Team',
   projects: 'Our Projects',

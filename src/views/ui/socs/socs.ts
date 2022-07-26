@@ -5,7 +5,7 @@ import socs from '../../../shared/constants/supported-hardware/socs';
 
 import './socs.css';
 
-export const SoCsList = {
+export const SoCs = {
   view: () =>
     m('ul.socs',
       socs.map((soc) => m(SoC, { soc }))

@@ -1,9 +1,7 @@
 import m from 'mithril';
-import socs from '../../../shared/constants/supported-hardware/socs';
+import { SoCs } from '../../ui/socs/socs';
 
 export const SupportedHardware = {
   view: () =>
-    m('ul', 
-      socs.map((soc) => m('li', soc)),
-    )
+    m(SoCs),
 };
