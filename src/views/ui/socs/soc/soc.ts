@@ -7,7 +7,7 @@ export const SoC = {
     m('li.socs__soc',
       m(m.route.Link, {
         class: `socs__link ${isChoosen ? 'socs__link_choosen' : ''}`, 
-        href: `/cameras/vendors/${soc}`
+        href: `/cameras/vendors/${soc.replace(' ', '-').toLowerCase()}`
       },
       soc)
     ),

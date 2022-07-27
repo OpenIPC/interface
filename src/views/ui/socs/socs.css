@@ -1,11 +1,15 @@
 .socs {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  border-bottom: 1px solid var(--lines-grey);
+  overflow: hidden;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--lines-grey);
+  }
 
   &__soc {
     margin: 0;
