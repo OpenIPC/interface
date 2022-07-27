@@ -40,4 +40,14 @@ m.route(document.body, '/', {
         })
       ),
   },
+  '/cameras/vendors/:choosenSoC': {
+    render: () =>
+      m(Layout, {
+        pageTitle: 'supported-hardware',
+      }, m(
+          SupportedHardware, {
+            pageTitle: 'supported-hardware',
+          })
+      ),
+  },
 });

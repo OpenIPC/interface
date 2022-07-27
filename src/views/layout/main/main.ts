@@ -8,6 +8,7 @@ export const Main = {
   view: ({ attrs: { pageTitle }, children }) =>
     m('main.main', [
       m(PageTitle, { text: pageTitles[pageTitle] }),
-      m('section.section', children),
+      // m('div.main-content', children),
+      children
     ]),
 };

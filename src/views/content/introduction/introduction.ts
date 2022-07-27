@@ -12,7 +12,7 @@ import './introduction.css';
 export const Introduction = {
   view: ({ attrs: { pageTitle }}) =>
     m('.introduction', [
-      m('.introduction__main', [
+      m('section.introduction__main', [
         m(ParagraphTitle, { title: paragraphTitles[pageTitle].open }),
         m('p.main-text', texts.introduction.open.p1),
         m('p.main-text', texts.introduction.open.p2),
@@ -26,7 +26,7 @@ export const Introduction = {
         m('p.main-text', texts.introduction.why.p2),
         m('p.main-text', texts.introduction.why.p3),
         ]),
-      m('.introduction__collab', [
+      m('section.introduction__collab', [
         m(Alliance, { title:  paragraphTitles[pageTitle].alliance }),
         m(Supporters, { title: paragraphTitles[pageTitle].supporters, supporters: supporters }),
       ]),

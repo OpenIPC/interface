@@ -4,10 +4,10 @@ import { Main } from './main/main';
 import { Footer } from './footer/footer';
 
 export const Layout = {
-  view: ({ attrs: { pageTitle }, children }) =>
+  view: ({ attrs: { pageTitle, choosenSoC }, children }) =>
     m('.page', [
       m(Header),
-      m(Main, { pageTitle }, children),
+      m(Main, { pageTitle, choosenSoC }, children),
       m(Footer),
     ]),
 };
