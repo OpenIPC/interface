@@ -1,5 +1,4 @@
 export const socs = [
-  'Full list',
   'Ambarella',
   'Anyka',
   'Fullhan',
