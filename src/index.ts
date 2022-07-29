@@ -50,7 +50,7 @@ m.route(document.body, '/', {
           })
       ),
   },
-  '/cameras/vendors/:choosenLetter/:choosenSoC': {
+  '/cameras/vendors/:choosenLetter/:choosenVendor': {
     render: () =>
       m(Layout, {
         pageTitle: 'supported-hardware',

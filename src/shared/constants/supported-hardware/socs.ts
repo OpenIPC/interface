@@ -1,18 +1,4 @@
-export const socs = [
-  'Ambarella',
-  'Anyka',
-  'Fullhan',
-  'Goke',
-  'GrainMedia',
-  'HiSilicon',
-  'Ingenic',
-  'MStar',
-  'Novatek',
-  'SigmaStar',
-  'Xiongmai',
-];
-
-export const socsContent = {
+export const socs = {
   'Ambarella': [
     {
     'Stage': 'NEQ',
