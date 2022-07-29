@@ -1,11 +1,70 @@
 .letters {
-  margin: 0;
-  padding: 0 0 20px 0;
   width: min(100%, 420px);
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  font: normal 500 20px/1.2 'IBM Plex Sans', sans-serif;
-  color: var(--blue);
+  padding: 0 0 25px 0;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font: normal 500 20px/1.2 'IBM Plex Sans', sans-serif;
+    border-bottom: 1px solid var(--lines-grey);
+  }
+
+  &_letter {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    margin: 0 0 -1px 0;
+    text-decoration: none;
+    color: var(--button-blue);
+    border: 1px solid var(--white);
+    border-bottom: 1px solid var(--lines-grey);
+    position: relative;
+
+    &::after {
+      content: '';
+      border-bottom: 1px solid var(--lines-grey);
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      top: 0;
+      bottom: -1px;
+    }
+
+    &:hover {
+      border: 1px solid var(--lines-grey);
+      border-bottom: 1px solid var(--white);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    
+    &:hover {
+      color: var(--button-blue-hover);
+    }
+
+    &_choosen {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border: 1px solid var(--lines-grey);
+      border-bottom: 1px solid var(--white);
+
+      &::after {
+        content: '';
+        border-bottom: 1px solid var(--white);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: -1px;
+      }
+    }
+  }
 }

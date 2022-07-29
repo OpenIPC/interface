@@ -4,11 +4,12 @@ import { SoC } from './soc/soc';
 import './socs.css';
 
 export const SoCs = {
-  view: ({ attrs: { socs, choosenSoC }}) =>
+  view: ({ attrs: { socs, letter, choosenSoC }}) =>
   m('nav.socs',
     m('ul.socs__list',
-      socs.map((soc: String, i: Number) =>
+      socs.map((soc: String) =>
         m(SoC, {
+          letter,
           soc,
           isChoosen: soc === choosenSoC,
       }))
