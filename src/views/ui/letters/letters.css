@@ -8,20 +8,25 @@
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     font: normal 500 20px/1.2 'IBM Plex Sans', sans-serif;
     border-bottom: 1px solid var(--lines-grey);
   }
 
-  &_letter {
+  &__letter {
     margin: 0;
     padding: 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
   }
 
   &__link {
     display: block;
+    flex: 1 1 auto;
+    text-align: center;
     box-sizing: border-box;
-    padding: 8px 12px;
+    padding: 8px 0;
     margin: 0 0 -1px 0;
     text-decoration: none;
     color: var(--button-blue);
