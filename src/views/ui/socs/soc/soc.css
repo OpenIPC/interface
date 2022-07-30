@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 3fr 12fr repeat(4, 4fr) 10fr 12fr;
+  grid-template-columns: 4fr 12fr repeat(4, 4fr) 10fr 12fr;
   border-bottom: 1px solid var(--lines-grey);
 
   &__cell {
@@ -14,7 +14,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-  font: normal 400 16px/1.2 'IBM Plex Sans', sans-serif;
+    font: normal 400 16px/1.2 'IBM Plex Sans', sans-serif;
 
     &:nth-child(1) {
       justify-content: center;
