@@ -1,0 +1,14 @@
+.socs-mobile {
+    display: none; 
+  
+  @media(max-width: $mobile) {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 16px 0;
+    font: normal normal 15px/1.2 'IBM Plex Sans', sans-serif;
+  }
+}

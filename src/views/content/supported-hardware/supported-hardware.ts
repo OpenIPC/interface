@@ -4,6 +4,7 @@ import { vendors } from '../../../shared/constants/supported-hardware/vendors';
 import { socs } from '../../../shared/constants/supported-hardware/socs';
 import { Letters } from '../../ui/letters/letters';
 import { Socs } from '../../ui/socs/socs';
+import { SocsMobile } from '../../ui/socs-mobile/socs-mobile';
 
 import './supported-hardware.css';
 
@@ -74,6 +75,9 @@ export const SupportedHardware = {
       m('section.socs-section',
         m('h2.socs-section__header', vendor === 'Full list' ? 'SoC: full list' : `SoC: filtered by ${vendor}`),
         m(Socs, {
+          socs: { 'Full list': socsFullList['Full list'], ...socsByLetter}[vendor],
+        }),
+        m(SocsMobile, {
           socs: { 'Full list': socsFullList['Full list'], ...socsByLetter}[vendor],
         }),
       ),

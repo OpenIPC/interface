@@ -1,5 +1,9 @@
 .socs {
   width: 100%;
+
+  @media(max-width: $mobile) {
+    display: none;
+  }
   
   &__list {
     list-style: none;

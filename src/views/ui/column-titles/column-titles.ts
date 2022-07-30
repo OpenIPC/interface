@@ -12,6 +12,6 @@ export const ColumnTitles = {
       m('li.column-titles__title', 'Linux'),
       m('li.column-titles__title', 'SDK'),
       m('li.column-titles__title', 'Load address'),
-      m('li.column-titles__title', 'Build Status'),
+      m('li.column-titles__title', 'Build status'),
     ]),
 }
