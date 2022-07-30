@@ -1,8 +1,10 @@
 import m from 'mithril';
 import socsIcons from '../../../../shared/icons/socs-info/socs-icons';
 
+import './soc.css';
+
 export const Soc = {
-  view: ({ attrs }) => {
+  view: ({ attrs: { soc }}) => {
     const {
       stage,
       socModel,
@@ -12,19 +14,25 @@ export const Soc = {
       sdk,
       loadAddress,
       buildStatus,
-    } = attrs;
+    } = soc;
 
-    m.trust(socsIcons[stage])
-
-    return m('dl.soc', [
-      m('dt.soc__cell', m.trust(socsIcons[stage])),
-      m('dt.soc__cell', socModel),
-      m('dt.soc__cell', docs),
-      m('dt.soc__cell', uBoot),
-      m('dt.soc__cell', linux),
-      m('dt.soc__cell', sdk),
-      m('dt.soc__cell', loadAddress),
-      m('dt.soc__cell', buildStatus),
+    return m('ul.soc', [
+      m('li.soc__cell', m.trust(socsIcons[stage.toLowerCase()])),
+      m('li.soc__cell', socModel),
+      m('li.soc__cell',
+        docs ? m.trust(socsIcons.infoFrame) : m.trust(socsIcons.emptyFrame)
+      ),
+      m('li.soc__cell',
+        uBoot ? m.trust(socsIcons.downArrowFrame) : m.trust(socsIcons.emptyFrame)
+      ),
+      m('li.soc__cell',
+        linux ? m.trust(socsIcons.downArrowFrame) : m.trust(socsIcons.emptyFrame)
+      ),
+      m('li.soc__cell',
+        sdk ? m.trust(socsIcons.downArrowFrame) : m.trust(socsIcons.emptyFrame)
+      ),
+      m('li.soc__cell', loadAddress),
+      m('li.soc__cell', 'buildStatus'),
     ])
   },
 }

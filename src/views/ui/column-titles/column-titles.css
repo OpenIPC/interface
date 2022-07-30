@@ -1,32 +1,26 @@
-.soc {
-  list-style: none;
+.column-titles {
   margin: 0;
-  padding: 0;
+  padding: 0 0 15px 0;
+  box-sizing: border-box;
+  height: 30px;
+  list-style: none;
   display: grid;
   grid-template-columns: 3fr 12fr repeat(4, 4fr) 10fr 12fr;
+  font: normal 700 14px/1.2 'IBM Plex Sans', sans-serif;
   border-bottom: 1px solid var(--lines-grey);
 
-  &__cell {
-    padding: 0;
-    box-sizing: border-box;
-    height: 54px;
+  &__title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
-  font: normal 400 16px/1.2 'IBM Plex Sans', sans-serif;
+    align-items: flex-start;
 
     &:nth-child(1) {
       justify-content: center;
     }
-  
+
     &:nth-child(n+3):nth-child(-n+6) {
       justify-content: center;
     }
-  }
-
-  &__cell > svg {
-    width: 30px;
-    height: 30px;
   }
 }

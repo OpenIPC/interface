@@ -3,6 +3,7 @@ import { Vendors } from '../../ui/vendors/vendors';
 import { vendors } from '../../../shared/constants/supported-hardware/vendors';
 import { socs } from '../../../shared/constants/supported-hardware/socs';
 import { Letters } from '../../ui/letters/letters';
+import { Socs } from '../../ui/socs/socs';
 
 import './supported-hardware.css';
 
@@ -58,29 +59,24 @@ export const SupportedHardware = {
     const letter: string = getLetterProvidedByPath(vendors);
     const vendor: string = getVendorProvidedByPath(vendors);
     const vendorsToShow: string[] = getVendorsByChoosenLetter(letter, vendors);
+    const socsByLetter: {} = getSocsByLetter(letter, vendors, socs);
     const socsFullList: Object = getSocsFullList(
-      letter ? getSocsByLetter(letter, vendors, socs) : socs 
+      letter ? socsByLetter : socs 
     );
 
-    return m('.sup-hd-wrapper', [
+    return m('.sup-hd-wrapper',
       m(Letters, { letters, selectedLetter: letter } ),
       m(Vendors, {
         letter,
         vendors: ['Full list', ...vendorsToShow],
         selectedVendor: vendor,
       }),
-      m('section.socs-section', [
-        m('h2', `SoC: filtered by ${vendor}`), 
-        m('ul',
-          { 'Full list': socsFullList['Full list'], ...socs }[vendor].map((soc: {}) =>
-            m('li',
-              m('ul',
-                Object.keys(soc).map((val) =>
-                  m('li', soc[val])),
-               ),
-            )),
-         ),
-      ]),
-    ]);
+      m('section.socs-section',
+        m('h2.socs-section__header', vendor === 'Full list' ? 'SoC: full list' : `SoC: filtered by ${vendor}`),
+        m(Socs, {
+          socs: { 'Full list': socsFullList['Full list'], ...socsByLetter}[vendor],
+        }),
+      ),
+    );
   },
 };
