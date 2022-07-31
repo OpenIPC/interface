@@ -10,14 +10,11 @@ import './header.css';
 import logo from '../../../shared/images/logo.svg';
 
 const pageClickHandler = (e) => {
-  console.log(e.target);
   if (
     document.querySelector('.dropdown_show')
     &&
     document.querySelector('.dropdown_show') !== e.target
   ) {
-      console.log('Hide!');
-      console.log(Header.clicked);
       Header.clicked = null;
       m.redraw();
   }
