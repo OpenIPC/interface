@@ -8,6 +8,21 @@ import { SocsMobile } from '../../ui/socs-mobile/socs-mobile';
 
 import './supported-hardware.css';
 
+export interface SoC {
+    stage: string,
+    socModel: string,
+    docs: string,
+    uBoot: string,
+    linux: string,
+    sdk: string,
+    loadAddress: string,
+    buildStatus: string,
+}
+
+export interface SoCs {
+  [key: string]: SoC[]
+}
+
 const getFirstLettersOfVendors = (vendors: string[]): string[]  => {
   return vendors.reduce((letters: string[], word: string) => {
     if (!letters.includes(word.slice(0, 1).toUpperCase()))
@@ -37,15 +52,15 @@ const getVendorsByChoosenLetter = (choosenLetter: string, vendors: string[]): st
 }
 
 const getSocsFullList = (socsByVendors: Object): Object => {
-  const socs: [][] = Object.values(socsByVendors);
-  const fullList: Object = socs.reduce((accumulator: {}, item: []) => {
+  const socs = Object.values(socsByVendors);
+  const fullList = socs.reduce((accumulator: {}, item: []) => {
     if (item) item.forEach((el: Object) => accumulator['Full list'].push(el));
     return accumulator;
   }, {'Full list': []});
   return fullList;
 }
 
-const getSocsByLetter = (choosenLetter: string, vendors: string[], socs: {}): {} => {
+const getSocsByLetter = (choosenLetter: string, vendors: string[], socs: SoCs): {} => {
   const vendorsStartsWithChoosenLetter: String[] = vendors.filter((vendor: String) => {
     return vendor.slice(0,1).toUpperCase() === choosenLetter;
   });

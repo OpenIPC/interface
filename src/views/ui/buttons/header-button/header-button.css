@@ -20,38 +20,34 @@
     width: 10px;
     height: 8px;
     margin: 0 0 0 3px;
-    transform: translateY(-2px);
   }
 
-  &:hover > svg {
-    animation: triangle-movement 1s linear;
+  &_clicked > svg {
+    animation: triangle-rotate .4s linear forwards;
+  }
+
+  &_unclicked > svg {
+    transform: translateY(-2px);
+    animation: triangle-rotate-back .4s linear forwards;
   }
 }
 
-
-
-@keyframes triangle-movement {
+@keyframes triangle-rotate {
   from {
-    transform: translateY(-2px);
+    transform: rotate(0);
   }
 
-  20% {
-    transform: translateY(-4px);
-  }
-
-  40% {
-    transform: translateY(0);
-  }
-
-  60% {
-    transform: translateY(-3px);
-  }
-
-  80% {
-    transform: translateY(-1px);
-  }
-  
   to {
-    transform: translateY(-2px);
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes triangle-rotate-back {
+  from {
+    transform: rotate(-180deg);
+  }
+
+  to {
+    transform: rotate(0);
   }
 }

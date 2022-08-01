@@ -9,12 +9,10 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.resolve('public'),
+      directory: path.join(__dirname, 'public'),
     },
     compress: true,
-    host: '192.168.99.113',
     port: 3000,
-    open: true,
     historyApiFallback: true,
   },
   module: {

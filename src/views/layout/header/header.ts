@@ -53,7 +53,7 @@ export const Header = {
                   m(HeaderLink, { label: elementName, href: el[elementName] })
                  )
               : m('li.header__route.header__route_nested', [
-                  m(HeaderButton, { label: elementName, clickHandler: Header.clickHandler }),
+                  m(HeaderButton, { label: elementName, clickHandler: Header.clickHandler, isClicked: elementName === Header.clicked }),
                   m(DropDown, { nestedElems: el[elementName], isOpen: elementName === Header.clicked }),
                 ])
           })
