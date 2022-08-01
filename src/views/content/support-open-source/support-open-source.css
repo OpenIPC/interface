@@ -1,0 +1,35 @@
+.support-open-source {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px 25px;
+}
+
+.sos-illustration {
+  flex: 1 1 calc(25% - 10px);
+
+  &__picture {
+    width: 100%;
+  }
+}
+
+.sos-text {
+  flex: 1 1 calc(75% - 15px);
+
+  &__h3 {
+    margin: 0;
+    padding: 0 0 16px 0;
+    font: normal normal 20px/24px 'IBM Plex Sans', sans-serif;
+  }
+
+  &__h4 {
+    margin: 0;
+    padding: 0 0 8px 0;
+    font: normal normal 24px/1.2 'IBM Plex Sans', sans-serif;
+  }
+
+  &__p {
+    margin: 0;
+    padding: 0 0 16px 0;
+    font: normal normal 16px/24px 'IBM Plex Sans', sans-serif;
+  }
+}

@@ -1,7 +1,7 @@
 export const pageTitles = {
   introduction: 'Introduction',
   'supported-hardware': 'Supported Hardware by SoC',
-  supportOpenSource: 'Support Open Source',
+  'support-open-source': 'Support Open Source',
   team: 'Our Team',
   projects: 'Our Projects',
   channels: 'Our Channels',
@@ -15,5 +15,9 @@ export const paragraphTitles = {
     why: 'Why OpenIPC Firmware?',
     alliance: 'Alliance',
     supporters: 'Supporters',
+  },
+  'support-open-source': {
+    become: 'Become a Sponsor',
+    donations: 'Donations',
   },
 };
