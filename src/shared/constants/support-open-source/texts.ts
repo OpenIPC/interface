@@ -7,10 +7,10 @@ export default {
     p4: 'Your contribution will help us advance development forward, and interact with the community on a regular basis.',
     p5: 'In recognition of your recurring donations, you will be permanently added to the Backers/Sponsors section on our GitHub page!',
     p6: 'We are committed to open and transparent accounting, and are grateful for any support you\'re able to provide for our efforts, so that we could advance OpenIPC and our mission towards a sustainable future.',
-    p7: 'If you have issues getting access or download files, feel free to contact us on our Telegram channel.',
+    p7: 'If you have issues getting access or download files, feel free to contact us on our [Telegram](https://t.me/openipc) channel.',
   },
   donations: {
-    p1: 'If you like our work, please consider supporting us on Open Collective',
+    p1: 'If you like our work, please consider supporting us on [Open Collective](https://opencollective.com/openipc/contribute/backer-14335/checkout)',
     thanks: 'Thanks you, it means a lot to us!',
   },
 }

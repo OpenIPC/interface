@@ -16,12 +16,12 @@ export const Introduction = {
       m('section.introduction__main', [
         m(ParagraphTitle, { title: paragraphTitles[pageTitle].open }),
         m('p.main-text', texts.introduction.open.p1),
-        m(ParagLink,{ text: texts.introduction.open.p2}),
+        m(ParagLink,{ text: texts.introduction.open.p2, pClass: 'main-text'}),
         m('.main-links', [
           m(IntroductionMainLink, { label: 'Precompiled binary files' }),
           m(IntroductionMainLink, { label: 'Source code on GitHub' }),
         ]),
-        m(ParagLink,{ text: texts.introduction.open.p3 }),
+        m(ParagLink,{ text: texts.introduction.open.p3, pClass: 'main-text' }),
         m('p.main-text', texts.introduction.open.p3),
         m(ParagraphTitle, { title: paragraphTitles[pageTitle].why }),
         m('p.main-text', texts.introduction.why.p1),
