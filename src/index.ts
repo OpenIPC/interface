@@ -3,6 +3,7 @@ import { Layout } from './views/layout/layout';
 import { Introduction } from './views/content/introduction/introduction';
 import { SupportedHardware } from './views/content/supported-hardware/supported-hardware';
 import { SupportOpenSource } from './views/content/support-open-source/support-open-source';
+import { OurTeam } from './views/content/our-team/our-team';
 
 import './shared/styles/global.css';
 import './shared/styles/palette.css';
@@ -48,6 +49,16 @@ m.route(document.body, '/', {
       }, m(
           SupportOpenSource, {
             pageTitle: 'support-open-source',
+        })
+      ),
+  },
+  '/our-team': {
+    render: () =>
+      m(Layout, {
+      pageTitle: 'our-team',
+    }, m(
+        OurTeam, {
+          pageTitle: 'our-team',
         })
       ),
   },

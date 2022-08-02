@@ -22,7 +22,6 @@ export const Introduction = {
           m(IntroductionMainLink, { label: 'Source code on GitHub' }),
         ]),
         m(ParagLink,{ text: texts.introduction.open.p3, pClass: 'main-text' }),
-        m('p.main-text', texts.introduction.open.p3),
         m(ParagraphTitle, { title: paragraphTitles[pageTitle].why }),
         m('p.main-text', texts.introduction.why.p1),
         m('p.main-text', texts.introduction.why.p2),

@@ -1,0 +1,69 @@
+.team-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  border: 1px solid var(--lines-grey);
+  border-radius: 6px;
+  max-width: 194px;
+
+  flex: 1 1 200px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__body {
+    padding: 16px;
+    position: relative;
+  }
+
+  &__nick {
+    margin: 0;
+    padding: 0 0 8px 0;
+    font: normal normal 20px/1.2 'IBM Plex Sans', sans-serif;
+  }
+
+  &__descr {
+    margin: 0;
+    padding: 0 0 16px 0;
+    font: normal normal 14px/1.2 'IBM Plex Sans', sans-serif;
+  }
+
+  &__socials {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0 2px;
+    width: max-content;
+    list-style: none;
+    position: absolute;
+    top: -14px;
+    right: 6px;
+    background: transparent;
+  }
+
+  &__social {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__social-link {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--white);
+  }
+  
+  &__social-link > svg {
+    color: black;
+    width: 20px;
+    height: 20px;
+  }
+}

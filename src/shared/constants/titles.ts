@@ -2,7 +2,7 @@ export const pageTitles = {
   introduction: 'Introduction',
   'supported-hardware': 'Supported Hardware by SoC',
   'support-open-source': 'Support Open Source',
-  team: 'Our Team',
+  'our-team': 'Our Team',
   projects: 'Our Projects',
   channels: 'Our Channels',
   wiki: 'OpenIPC Wiki',

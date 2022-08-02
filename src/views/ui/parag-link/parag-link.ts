@@ -1,8 +1,8 @@
 import m from 'mithril';
-import { paragLink } from '../../../models/parag-links';
+import { paragLink } from '../../../shared/utils/parag-links';
 
 export const ParagLink = {
-  view: ({ attrs: { text, pClass }}) =>
+  view: ({ attrs: { text, pClass }}: {attrs: { text: string, pClass: string}}) =>
     m(`p.${pClass}`,
       paragLink.split(text).map((chunk: string) => {
         if (/^\[.*?\]\(.*?\)$/ig.test(chunk)) {
