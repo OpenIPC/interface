@@ -6,6 +6,6 @@
     "target": "es5",
     "allowJs": true,
     "moduleResolution": "Node",
-    "lib": ["DOM", "ES2017"]
+    "lib": ["DOM", "ES2020"]
   }
 }
