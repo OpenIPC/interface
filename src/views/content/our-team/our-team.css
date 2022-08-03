@@ -1,4 +1,8 @@
 .team {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
   &__intro {
     margin: 0;
     padding: 0 0 16px 0;
@@ -7,14 +11,57 @@
 
   &__list {
     margin: 0;
-    padding: 0;
+    padding: 0 0 40px 0;
     list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+
+    @media(max-width: $mobile) {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
+}
+
+.donate-us {
+  width: 100%;
+  margin: 0;
+  padding: 26px 0;
+
+  &__wrapper {
+    background: var(--blue-like-bg);
+    border-radius: 6px;
+    border: 1px solid var(--lines-grey);
+  }
+
+  &__content {
+    padding: 22px 0;
+    margin: 0 auto;
+    width: min(100%, 610px);
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
+    place-content: center center; 
+    gap: 20px;
+  }
 
-    border: 1px solid red;
+  &__button {
+    display: flex;
+    flex-flow: column;
+    place-content: center center;
+  }
+
+  &__text-header {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: var(--deep-blue-text);
+    font: normal normal 24px/1.1 'IBM Plex Sans', sans-serif;
+  }
+
+  &__text-body {
+    margin: 0;
+    padding: 0;
+    color: var(--deep-blue-text);
+    font: normal normal 16px/1.1 'IBM Plex Sans', sans-serif;
   }
 }

@@ -18,8 +18,8 @@ export const Introduction = {
         m('p.main-text', texts.introduction.open.p1),
         m(ParagLink,{ text: texts.introduction.open.p2, pClass: 'main-text'}),
         m('.main-links', [
-          m(IntroductionMainLink, { label: 'Precompiled binary files' }),
-          m(IntroductionMainLink, { label: 'Source code on GitHub' }),
+          m(IntroductionMainLink, { label: 'Get  binary files' }),
+          m(IntroductionMainLink, { label: 'View source code' }),
         ]),
         m(ParagLink,{ text: texts.introduction.open.p3, pClass: 'main-text' }),
         m(ParagraphTitle, { title: paragraphTitles[pageTitle].why }),
