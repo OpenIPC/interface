@@ -1,0 +1,31 @@
+.our-projects {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.core {
+  box-sizing: border-box;
+  min-width: 344px;
+  flex: 1 1 calc(50% - 20px);
+}
+
+.umbrella {
+  box-sizing: border-box;
+  min-width: 344px;
+  flex: 1 1 calc(50% - 20px);
+
+  &__mention {
+    color: var(--greenish-text);
+    font: normal normal 16px/24px 'IBM Plex Sans', sans-serif;
+    padding: 16px;
+    margin: 0 0 16px 0;
+    background: var(--green-like-bg);
+    border-radius: 6px;
+  }
+}
+
+.projects-list {
+  margin: 0;
+  padding: 0;
+}

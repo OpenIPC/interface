@@ -14,7 +14,7 @@ const navigation = [
         'Our Team': '/our-team',
       },
       {
-        'Our Projects': '/our-project',
+        'Our Projects': '/our-projects',
       },
       {
         'Our Channels': 'our-channels',

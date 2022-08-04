@@ -4,6 +4,7 @@ import { Introduction } from './views/content/introduction/introduction';
 import { SupportedHardware } from './views/content/supported-hardware/supported-hardware';
 import { SupportOpenSource } from './views/content/support-open-source/support-open-source';
 import { OurTeam } from './views/content/our-team/our-team';
+import { OurProjects } from './views/content/our-projects/our-projects';
 
 import './shared/styles/global.css';
 import './shared/styles/palette.css';
@@ -16,8 +17,7 @@ m.route(document.body, '/', {
     render: () =>
       m(Layout, {
         pageTitle: 'introduction',
-      }, m(
-        Introduction, {
+      }, m(Introduction, {
           pageTitle: 'introduction'
         })
       ),
@@ -26,8 +26,7 @@ m.route(document.body, '/', {
     render: () =>
       m(Layout, {
         pageTitle: 'introduction'
-      }, m(
-        Introduction, {
+      }, m(Introduction, {
           pageTitle: 'introduction',
         })
       ),
@@ -36,8 +35,7 @@ m.route(document.body, '/', {
     render: () =>
       m(Layout, {
         pageTitle: 'supported-hardware',
-      }, m(
-          SupportedHardware, {
+      }, m(SupportedHardware, {
             pageTitle: 'supported-hardware',
         })
       ),
@@ -46,8 +44,7 @@ m.route(document.body, '/', {
     render: () =>
       m(Layout, {
         pageTitle: 'support-open-source',
-      }, m(
-          SupportOpenSource, {
+      }, m(SupportOpenSource, {
             pageTitle: 'support-open-source',
         })
       ),
@@ -55,19 +52,26 @@ m.route(document.body, '/', {
   '/our-team': {
     render: () =>
       m(Layout, {
-      pageTitle: 'our-team',
-    }, m(
-        OurTeam, {
+        pageTitle: 'our-team',
+    }, m(OurTeam, {
           pageTitle: 'our-team',
         })
       ),
+  },
+  '/our-projects': {
+    render: () =>
+      m(Layout, {
+        pageTitle: 'our-projects',
+      }, m(OurProjects, {
+        pageTitle: 'our-projects',
+      }),
+    ),
   },
   '/cameras/vendors/:choosenLetter': {
     render: () =>
       m(Layout, {
         pageTitle: 'supported-hardware',
-      }, m(
-          SupportedHardware, {
+      }, m(SupportedHardware, {
             pageTitle: 'supported-hardware',
           })
       ),
@@ -76,8 +80,7 @@ m.route(document.body, '/', {
     render: () =>
       m(Layout, {
         pageTitle: 'supported-hardware',
-      }, m(
-          SupportedHardware, {
+      }, m(SupportedHardware, {
             pageTitle: 'supported-hardware',
           })
       ),

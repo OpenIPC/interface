@@ -3,10 +3,10 @@ export const pageTitles = {
   'supported-hardware': 'Supported Hardware by SoC',
   'support-open-source': 'Support Open Source',
   'our-team': 'Our Team',
-  projects: 'Our Projects',
+  'our-projects': 'Our Projects',
   channels: 'Our Channels',
   wiki: 'OpenIPC Wiki',
-  calculatot: 'Firmware Partitions Calculation',
+  calculator: 'Firmware Partitions Calculation',
 }
 
 export const paragraphTitles = {
@@ -20,4 +20,8 @@ export const paragraphTitles = {
     become: 'Become a Sponsor',
     donations: 'Donations',
   },
-};
+  'our-projects': {
+    core: 'Core projects',
+    umbrella: 'OpenIPC umbrella projects',
+  },
+}

@@ -1,0 +1,12 @@
+.projects_list__link {
+  text-decoration: underline;
+  color: var(--button-blue);
+  font: normal 700 16px/24px 'IBM Plex Sans', sans-serif;
+  width: max-content;
+}
+
+.projects_list__description {
+  padding: 0 0 8px 0;
+  margin: 0;
+  font: normal normal 16px/24px 'IBM Plex Sans', sans-serif;
+}
