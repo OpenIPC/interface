@@ -17,7 +17,7 @@ const navigation = [
         'Our Projects': '/our-projects',
       },
       {
-        'Our Channels': 'our-channels',
+        'Our Channels': '/our-channels',
       },
       {
         'Our Wiki': '/wiki',

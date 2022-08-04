@@ -20,4 +20,13 @@
     transition: max-height .2s ease-out,
                 padding-top .2s ease-out;
   }
+
+  &__item {
+    padding: 0 0 10px 0;
+  }
+
+  &__link {
+    color: var(--white);
+    text-decoration: none;
+  }
 }
