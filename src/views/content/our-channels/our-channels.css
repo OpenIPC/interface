@@ -1,0 +1,36 @@
+.our-channels {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.channels {
+  box-sizing: border-box;
+  flex: 1 1 60%;
+  padding: 0 0 20px 0;
+}
+
+.chats {
+  box-sizing: border-box;
+  flex: 1 1 40%;
+  display: flex;
+  flex-flow: column;
+}
+
+.chats__banners {
+  width: 100%;
+  min-width: 284px;
+}
+
+.chat-banner {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 281px;
+}
+
+.chat-banner:first-child {
+  margin: 0 0 20px 0;
+}
+
+.our-channels > .donate-us {
+  flex: 1 1 100%;
+}

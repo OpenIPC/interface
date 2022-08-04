@@ -5,6 +5,7 @@ import { SupportedHardware } from './views/content/supported-hardware/supported-
 import { SupportOpenSource } from './views/content/support-open-source/support-open-source';
 import { OurTeam } from './views/content/our-team/our-team';
 import { OurProjects } from './views/content/our-projects/our-projects';
+import { OurChannels } from './views/content/our-channels/our-channels';
 
 import './shared/styles/global.css';
 import './shared/styles/palette.css';
@@ -64,6 +65,15 @@ m.route(document.body, '/', {
         pageTitle: 'our-projects',
       }, m(OurProjects, {
         pageTitle: 'our-projects',
+      }),
+    ),
+  },
+  '/our-channels': {
+    render: () =>
+      m(Layout, {
+        pageTitle: 'our-channels',
+      }, m(OurChannels, {
+        pageTitle: 'our-channels',
       }),
     ),
   },

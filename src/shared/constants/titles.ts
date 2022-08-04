@@ -4,7 +4,7 @@ export const pageTitles = {
   'support-open-source': 'Support Open Source',
   'our-team': 'Our Team',
   'our-projects': 'Our Projects',
-  channels: 'Our Channels',
+  'our-channels': 'Our Channels',
   wiki: 'OpenIPC Wiki',
   calculator: 'Firmware Partitions Calculation',
 }
@@ -23,5 +23,8 @@ export const paragraphTitles = {
   'our-projects': {
     core: 'Core projects',
     umbrella: 'OpenIPC umbrella projects',
+  },
+  'our-channels': {
+    chat: 'Chat in browser',
   },
 }

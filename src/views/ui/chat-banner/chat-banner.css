@@ -1,0 +1,32 @@
+.chat-banner {
+  padding: 16px;
+  background: var(--blue-like-bg);
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center space-between;
+  border-radius: 6px;
+  border: 1px solid var(--lines-grey);
+
+  &__chat-title {
+    padding: 0 0 4px 0;
+    font: normal normal clamp(18px, 2.11vw, 24px)/1.2 'IBM Plex Sans', sans-serif;
+    color: var(--deep-blue-text);
+  }
+
+  &__chat-link {
+    font: normal normal clamp(12px, 1.11vw, 16px)/1.2 'IBM Plex Sans', sans-serif;
+    color: var(--button-blue);
+    display: flex;
+  }
+
+  &__chat-icon {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center center;
+  }        
+
+  &__chat-icon > svg {
+    width: 40px;
+    height: 40px;
+  }
+}
