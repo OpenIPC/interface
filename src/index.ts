@@ -6,6 +6,7 @@ import { SupportOpenSource } from './views/content/support-open-source/support-o
 import { OurTeam } from './views/content/our-team/our-team';
 import { OurProjects } from './views/content/our-projects/our-projects';
 import { OurChannels } from './views/content/our-channels/our-channels';
+import { FirmwarePartitionCalculator } from './views/content/firmware-partition-calculator/firmware-partition-caclucator';
 
 import './shared/styles/global.css';
 import './shared/styles/palette.css';
@@ -75,6 +76,13 @@ m.route(document.body, '/', {
       }, m(OurChannels, {
         pageTitle: 'our-channels',
       }),
+    ),
+  },
+  '/firmware-partition-calculator': {
+    render: () =>
+      m(Layout, {
+        pageTitle: 'firmware-partition-calculator',
+      }, m(FirmwarePartitionCalculator),
     ),
   },
   '/cameras/vendors/:choosenLetter': {

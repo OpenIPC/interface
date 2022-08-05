@@ -6,7 +6,7 @@ export const pageTitles = {
   'our-projects': 'Our Projects',
   'our-channels': 'Our Channels',
   wiki: 'OpenIPC Wiki',
-  calculator: 'Firmware Partitions Calculation',
+  'firmware-partition-calculator': 'Firmware Partitions Calculator',
 }
 
 export const paragraphTitles = {
