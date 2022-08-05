@@ -1,30 +1,29 @@
 .our-channels {
   display: flex;
+  gap: 20px;
   flex-flow: row wrap;
 }
 
 .channels {
   box-sizing: border-box;
-  flex: 1 1 60%;
+  flex: 1 0 50%;
   padding: 0 0 20px 0;
 }
 
 .chats {
   box-sizing: border-box;
-  flex: 1 1 40%;
+  min-width: 263px;
+  flex: 1 0 20%;
   display: flex;
   flex-flow: column;
 }
 
 .chats__banners {
   width: 100%;
-  min-width: 284px;
 }
 
 .chat-banner {
   box-sizing: border-box;
-  width: 100%;
-  min-width: 281px;
 }
 
 .chat-banner:first-child {

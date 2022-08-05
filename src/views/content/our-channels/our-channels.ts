@@ -24,7 +24,7 @@ export const OurChannels = {
         ),
       ),
       m('section.chats',
-        m(ParagraphTitle, { title: paragraphTitles['our-channels'].chat }),
+        m(ParagraphTitle, { title: paragraphTitles[pageTitle].chat }),
         m('.chats__banners',
           ourChannels.banners.map((chat) =>
             m(ChatBanner, {
