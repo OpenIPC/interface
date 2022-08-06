@@ -32,7 +32,7 @@
 
   &__label {
     color: var(--grey);
-    font: normal normal 13px/1.2 'IBM Plex Sans', sans-serif;
+    font: normal normal clamp(11px, 1.14vw, 13px)/1.2 'IBM Plex Sans', sans-serif;
   }
 
   &__input {
@@ -40,12 +40,12 @@
     outline: none;
     padding: 0;
     margin: 0 5px;
-    font: normal normal 26px/1.2 monospace;
+    font: normal normal clamp(16px, 1.8vw, 26px)/1.2 monospace;
     text-align: right;
     width: calc(100% - 10px);
 
     &_name {
-      font: normal normal 22px/1.2 monospace;
+      font: normal normal clamp(12px, 1.53vw, 22px)/1.2 monospace;
       text-align: left;
     }
 
