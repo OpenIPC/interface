@@ -1,6 +1,10 @@
 :root {
   --white: #fff;
-
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #00ff00;
+  --pure-blue: #0000ff;
+  
   --deep-blue-text: #084298;
   --blue: #4c60d8;
   --button-blue: #0e6efd;
