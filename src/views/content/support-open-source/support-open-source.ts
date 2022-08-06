@@ -4,6 +4,8 @@ import { paragraphTitles } from '../../../shared/constants/titles';
 import { ParagLink } from '../../ui/parag-link/parag-link';
 import SOSTexts from '../../../shared/constants/support-open-source/texts'; 
 
+import { SolidButton } from '../../ui/buttons/solid-button/solid-button';
+
 import './support-open-source.css';
 
 export const SupportOpenSource = {
@@ -30,5 +32,10 @@ export const SupportOpenSource = {
         ),
         m('h4.sos-text__h4', SOSTexts.donations.thanks),
       ]),
+      m(SolidButton, {
+        label: 'Recalculate',
+        bgColor: 'button-blue',
+        labelColor: 'white',
+      }),
     ]),
 }
