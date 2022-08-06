@@ -15,7 +15,6 @@
 
     @media(max-width: $mobile) {
       grid-template-columns: 1fr;
-      grid-auto-rows: 64px;
       grid-template-areas:
         "cell_1-1"
         "cell_1-2"
