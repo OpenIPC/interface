@@ -1,0 +1,27 @@
+.solid-button {
+  padding: 0;
+  margin: 0;
+  width: 110px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  font: normal normal 16px/1.2 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  transition: background .2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_bg_button-blue {
+    background: var(--button-blue);
+  }
+
+  &_bg_button-blue:hover {
+    background: var(--button-blue-hover);
+  }
+
+  &_color_white {
+    color: var(--white);
+  }
+}

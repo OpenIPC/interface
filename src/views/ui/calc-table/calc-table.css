@@ -1,0 +1,88 @@
+.calc-table {
+  width: 100%;
+  border: 1px solid orange;
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px min(25px, 1.76vw);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "cell_1-1 cell_1-2 cell_1-3 .        cell_1-4"
+    "cell_2-1 cell_2-2 cell_2-3 cell_2-4 cell_2-5";
+}
+
+.cell {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
+  outline: 4px solid var(--blue-like-bg);
+
+  &_border_black {
+    border: 3px solid var(--black);
+  }
+
+  &__label {
+    color: var(--grey);
+    font: normal normal 13px/1.2 'IBM Plex Sans', sans-serif;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 5px;
+    font: normal normal 26px/1.2 monospace;
+    text-align: right;
+    width: calc(100% - 10px);
+
+    &_name {
+      font: normal normal 22px/1.2 monospace;
+      text-align: left;
+    }
+
+    &_hex_black {
+      color: var(--black);
+    }
+  }
+}
+
+.cell_1-1 {
+  grid-area: cell_1-1;
+}
+
+.cell_1-2 {
+  grid-area: cell_1-2;
+}
+
+.cell_1-3 {
+  grid-area: cell_1-3;
+}
+
+.cell_1-4 {
+  grid-area: cell_1-4;
+  border: 1px solid red;
+}
+
+.cell_2-1 {
+  grid-area: cell_2-1;
+}
+
+.cell_2-2 {
+  grid-area: cell_2-2;
+}
+
+.cell_2-3 {
+  grid-area: cell_2-3;
+}
+
+.cell_2-4 {
+  grid-area: cell_2-4;
+}
+
+.cell_2-5 {
+  grid-area: cell_2-5;
+}
