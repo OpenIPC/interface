@@ -12,6 +12,41 @@
     "cell_4-1 cell_4-2 cell_4-3 cell_4-4 cell_4-5"
     "cell_5-1 cell_5-2 cell_5-3 cell_5-4 cell_5-5"
     "cell_6-1 cell_6-2 cell_6-3 cell_6-4 cell_6-5";
+
+    @media(max-width: $mobile) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 64px;
+      grid-template-areas:
+        "cell_1-1"
+        "cell_1-2"
+        "cell_1-3"
+        "cell_1-4"
+        "cell_2-1"
+        "cell_2-2"
+        "cell_2-3"
+        "cell_2-4"
+        "cell_2-5"
+        "cell_3-1"
+        "cell_3-2"
+        "cell_3-3"
+        "cell_3-4"
+        "cell_3-5"
+        "cell_4-1"
+        "cell_4-2"
+        "cell_4-3"
+        "cell_4-4"
+        "cell_4-5"
+        "cell_5-1"
+        "cell_5-2"
+        "cell_5-3"
+        "cell_5-4"
+        "cell_5-5"
+        "cell_6-1"
+        "cell_6-2"
+        "cell_6-3"
+        "cell_6-4"
+        "cell_6-5";
+    }
 }
 
 .cell {
@@ -33,6 +68,10 @@
   &__label {
     color: var(--grey);
     font: normal normal clamp(11px, 1.14vw, 13px)/1.2 'IBM Plex Sans', sans-serif;
+
+    @media(max-width: $mobile) {
+      font: normal normal 15px/1.2 'IBM Plex Sans', sans-serif;
+    }
   }
 
   &__input {
@@ -44,9 +83,17 @@
     text-align: right;
     width: calc(100% - 10px);
 
+    @media(max-width: $mobile) {
+      font: normal normal 26px/1.2 monospace;
+    }
+
     &_name {
       font: normal normal clamp(12px, 1.53vw, 22px)/1.2 monospace;
       text-align: left;
+
+      @media(max-width: $mobile) {
+        font: normal normal 22px/1.2 monospace;
+      }
     }
 
     &_hex_black {
