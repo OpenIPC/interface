@@ -20,7 +20,7 @@ Be sure you have recent version of `yarn`, use `yarn --version`. If `yarn` is no
 git clone https://github.com/byav/oipc-web 
 cd oips-web
 yarn install
-yarn dev
+yarn run dev
 ```
 
 You should now have a development server running at localhost:3000

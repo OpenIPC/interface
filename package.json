@@ -3,7 +3,7 @@
   "type": "commonjs",
   "packageManager": "yarn@3.2.0",
   "scripts": {
-    "start": "webpack serve --mode development -o ./public -d eval-source-map",
+    "dev": "webpack serve --mode development -o ./public -d eval-source-map",
     "build": "webpack --mode production -o ./build"
   },
   "dependencies": {
