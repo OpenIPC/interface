@@ -29,7 +29,7 @@ You should now have a development server running at localhost:3000
 
 If after you have installed all dependencies you still have problems with starting the site, try to delete `node_modules` folder in project root directory and run `yarn install` again. If errors still exist please inform the community using one of these [contacts](https://github.com/byav/oipc-web#community-contacts).
 
-##### Supported and in development progress SoCs by vendors
+## Supported and in development progress SoCs by vendors
 - Ambarella
 - Anyka
 - Fullhan
@@ -43,12 +43,12 @@ If after you have installed all dependencies you still have problems with starti
 - SigmaStar
 - Xiongmai
 
-##### Community contacts
+## Community contacts
 - [International Telegram channel](https://t.me/OpenIPC)
 - [Russian-speaking users Telegram channel](https://t.me/openipc_modding)
 - [Paid technical support](https://paywall.pw/openipc)
 - [In browser English chat](https://gitter.im/OpenIPC/english)
 - [In browser Russian chat](https://gitter.im/OpenIPC/russian)
 
-### License
+## License
 [MIT](https://opensource.org/licenses/MIT)
