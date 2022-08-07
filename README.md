@@ -1,8 +1,8 @@
 # OpenIPC
 
-This is the source code for the proposal variant of OpenIPC official web site.
+This is the source code for the proposal variant of [OpenIPC](https://openipc.org) official web site.
 
-It reproduces the current OpenIPC site design and layout as long as its content. Follow the link to observ its actual state.
+It reproduces the current [OpenIPC](https://openipc.org) site design and layout as long as its content. Follow the link https://openipc.org to observ its actual state.
 
 ## Summary
 
