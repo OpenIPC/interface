@@ -1,0 +1,22 @@
+.calc-msg {
+  width: 100%;
+  padding: 20px 0 0 0;
+  
+  &__msg-container {
+    background: var(--green-like-bg);
+    height: 76px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: 1px solid var(--light-grey);
+    border-radius: 6px;
+  }
+
+  &__msg {
+    margin: 0;
+    padding: 0;
+    color: var(--greenish-text);
+    font: normal normal 28px/1.2 'IBM Plex Sans', sans-serif;
+    text-align: center;
+  }
+}

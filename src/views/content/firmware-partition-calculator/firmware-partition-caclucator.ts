@@ -1,6 +1,7 @@
 import m from 'mithril';
 import { CalcTable } from '../../ui/calc-table/calc-table';
 import { CalcPartitChart } from '../../ui/calc-partit-chart/calc-partit-chart';
+import { CalcMsg } from '../../ui/calc-msg/calc-msg';
 
 import './firmware-partition-calculator.css';
 
@@ -15,6 +16,8 @@ export const FirmwarePartitionCalculator = {
         p3Size: 2048,
         p4Size: 5120,
       }),
-      m('.calc-msg', ),
+      m(CalcMsg, {
+        msg: 'Please enter MTD device name to generate mtdpars string',
+      }),
     ]),
 }
