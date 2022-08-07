@@ -25,7 +25,7 @@ You should now have a development server running at localhost:3000
 
 ### Troubleshooting
 
-If after you have installed all dependencies you still have problems with starting the site, try to delete `node_modules` folder in project root directory and run `yarn install` again. If errors still exist please inform the community using one of theese [contacts].
+If after you have installed all dependencies you still have problems with starting the site, try to delete `node_modules` folder in project root directory and run `yarn install` again. If errors still exist please inform the community using one of theese [contacts](https://github.com/byav/oipc-web#community-contacts).
 
 ##### Supported and in development progress SoCs by vendors
 - Ambarella
