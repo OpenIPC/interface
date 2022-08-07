@@ -6,7 +6,7 @@ It reproduces the current [OpenIPC](https://openipc.org) site design and layout 
 
 ## Summary
 
-OpenIPC is a Linux based IP cameras alternative open source firmware for wide range of modern processors ([SoCs list](https://github.com/byav/oipc-web#supported-and-in-development-progress-socs-by-vendors)).
+OpenIPC is a Linux based IP cameras alternative firmware for wide range of modern processors ([SoCs list](https://github.com/byav/oipc-web#supported-and-in-development-progress-socs-by-vendors)). It's an opensource project with a global contributor community. Using alternative firmware for your IP cameras you can fully control your device without worring about unexpecting behaviour and inconspicuous backdoors. Be the exact owner of your camera!
 
 ##### Supported and in development progress SoCs by vendors
 - Ambarella
