@@ -1,0 +1,39 @@
+.calc-partit-chart {
+  padding: 20px 0 0 0;
+  width: 100%;
+
+  &__wrapper {
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &__p1-size {
+    border: 1px solid transparent;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: var(--red);
+    flex: 1 1 auto;
+  }
+
+  &__p2-size {
+    background: var(--orange);
+  }
+
+  &__p3-size {
+    background: var(--green);
+  }
+
+  &__p4-size {
+    background: var(--pure-blue);
+  }
+
+  &__p5-size {
+    border: 1px solid transparent;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: var(--grey);
+  }
+}
