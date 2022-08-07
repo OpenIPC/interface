@@ -23,7 +23,9 @@ yarn dev
 
 You should now have a development server running at localhost:5000
 
-### If after you have installed all dependencies you still have problems with starting the site, try to delete `node_modules` folder in project root directory and run `yarn install` again. If errors still exist please inform the community using one of theese [contacts].
+### Troubleshooting
+
+If after you have installed all dependencies you still have problems with starting the site, try to delete `node_modules` folder in project root directory and run `yarn install` again. If errors still exist please inform the community using one of theese [contacts].
 
 ##### Supported and in development progress SoCs by vendors
 - Ambarella
