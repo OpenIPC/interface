@@ -12,7 +12,7 @@ OpenIPC is a Linux based IP cameras alternative firmware for wide range of moder
 This site is made using [Mithril.js](mithril.js.org) framework with intent to increase development process and further maintainability. The site is suituble for all screen resolutions and provide convenient modern user interface. However yor're welcome to point out to potential or explicit bugs if you happened to find ones.
 
 ### Running the site
-You can obtain local copy of the site und running it on your machine. Just follow this steps:
+You can obtain local copy of the site und running it on your machine. Just follow theese steps:
 
 ```
 git clone https://github.com/byav/oipc-web 
@@ -21,7 +21,7 @@ yarn install
 yarn dev
 ```
 
-You should now have a development server running at localhost:5000
+You should now have a development server running at localhost:3000
 
 ### Troubleshooting
 
@@ -42,11 +42,11 @@ If after you have installed all dependencies you still have problems with starti
 - Xiongmai
 
 ##### Community contacts
-[International Telegram channel](https://t.me/OpenIPC)
-[Russian-speaking users Telegram channel](https://t.me/openipc_modding)
-[Paid technical support](https://paywall.pw/openipc)
-[In browser English chat](https://gitter.im/OpenIPC/english)
-[In browser Russian chat](https://gitter.im/OpenIPC/russian)
+- [International Telegram channel](https://t.me/OpenIPC)
+- [Russian-speaking users Telegram channel](https://t.me/openipc_modding)
+- [Paid technical support](https://paywall.pw/openipc)
+- [In browser English chat](https://gitter.im/OpenIPC/english)
+- [In browser Russian chat](https://gitter.im/OpenIPC/russian)
 
 ### License
 [MIT](https://opensource.org/licenses/MIT)
