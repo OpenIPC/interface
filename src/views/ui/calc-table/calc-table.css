@@ -108,7 +108,6 @@
 
 .cell_1-1 {
   grid-area: cell_1-1;
-  outline: 4px solid var(--blue-like-bg);
 }
 
 .cell_1-2 {
@@ -231,4 +230,8 @@
 
 .cell_6-5 {
   grid-area: cell_6-5;
+}
+
+.cell_outline {
+  outline: 4px solid var(--blue-like-bg);
 }
