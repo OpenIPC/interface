@@ -18,3 +18,10 @@
   font-weight: 500;
   src: url('../../../public/fonts/IBMPlexSans-SemiBold.woff2');
 }
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../../public/fonts/share-tech-mono-v15-latin-regular.woff2');
+}
