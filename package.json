@@ -4,7 +4,8 @@
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
-    "build": "webpack --mode production -o ./build"
+    "build": "webpack --mode production -o ./build",
+    "deploy": "yarn run build && tar -C build . -cf - | ssh bfzu@oipc-web-proposal.garagecam.ru tar -xf - -C /home/bfzu/oipc-web-proposal && echo 'Deploy seccessfully completed'"
   },
   "dependencies": {
     "@types/mithril": "^2.0.11",
