@@ -40,7 +40,8 @@ export const Header = {
     m('header.header', [
       m('nav.header__navigation', [
         m('div.header__home',
-          m('a.header__home-link[href=https://openipc.org]',
+          m(m.route.Link, { href: "/", class: "header__home-link" }, 
+            //m('a.header__home-link[href=https://openipc.org]',
             m.trust(logo),
            ),
          ),
