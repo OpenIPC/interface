@@ -18,7 +18,7 @@ Be sure you have recent version of `yarn`, use `yarn --version`. If `yarn` is no
 
 ```
 git clone https://github.com/byav/oipc-web 
-cd oips-web
+cd oipc-web
 yarn install
 yarn run dev
 ```
