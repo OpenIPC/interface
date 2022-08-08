@@ -41,7 +41,6 @@ export const Header = {
       m('nav.header__navigation', [
         m('div.header__home',
           m(m.route.Link, { href: "/", class: "header__home-link" }, 
-            //m('a.header__home-link[href=https://openipc.org]',
             m.trust(logo),
            ),
          ),
