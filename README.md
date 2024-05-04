@@ -2,7 +2,7 @@
 
 Working example: https://deploy--oipc.netlify.app/
 
-This is the source code for the proposal variant of [OpenIPC](https://openipc.org) official web site.
+This is the source code for the proposal variant of current [OpenIPC](https://openipc.org) official web site.
 
 It reproduces the current [OpenIPC](https://openipc.org) site design and layout as long as its content.
 
