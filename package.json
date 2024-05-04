@@ -1,7 +1,7 @@
 {
   "name": "openipc-website",
   "type": "commonjs",
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@4.2.1",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
     "build": "webpack --mode production -o ./build",
