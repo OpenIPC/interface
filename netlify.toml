@@ -1,0 +1,7 @@
+[build]
+  publish = "build"
+  command = "yarn run build"
+[[redirects]]
+  status=200
+  from="/*"
+  to="/index.html"

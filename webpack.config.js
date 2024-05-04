@@ -1,5 +1,6 @@
 const path = require('path');
 const postcssConfig = require('./postcss.config.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.resolve('src'),
@@ -7,6 +8,7 @@ module.exports = {
   output: {
     filename: 'app.js',
   },
+  plugins: [new HtmlWebpackPlugin()],
   devServer: {
     static: {
       directory: path.join(__dirname, 'public'),
