@@ -23,3 +23,9 @@ jobs:
 
       - name: Deploy
         uses: actions/deploy-pages@v3
+
+      - name: Push changes to server
+        run: |
+          git checkout gh-pages
+          git remote set-url --push origin https://actions:$GITHUB_TOKEN@github.com/flyrouter/interface
+          git push -f origin gh-pages
