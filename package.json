@@ -1,11 +1,10 @@
 {
   "name": "openipc-website",
   "type": "commonjs",
-  "packageManager": "yarn@4.2.1",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
-    "build": "webpack --mode production -o ./build",
-    "deploy": "yarn run build && tar -C build . -cf - | ssh bfzu@oipc-web-proposal.garagecam.ru tar -xf - -C /home/bfzu/oipc-web-proposal && echo 'Deploy seccessfully completed'"
+    "build": "webpack --mode production -o build",
+    "deploy": "yarn install && yarn run build"
   },
   "dependencies": {
     "@types/mithril": "^2.0.11",
