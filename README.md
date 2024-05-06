@@ -24,7 +24,7 @@ If `yarn` is not installed on your system, install it by running `npm install --
 
 ```
 git clone https://github.com/openipc/interface 
-cd oipc-web
+cd interface
 yarn install
 yarn run dev
 ```
