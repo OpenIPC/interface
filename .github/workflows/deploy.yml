@@ -21,13 +21,13 @@ jobs:
         with:
           path: build
 
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: latest
-          files: |
-            public/index.html
-            build/app.js
+#      - name: Release
+#        uses: softprops/action-gh-release@v2
+#        with:
+#          tag_name: latest
+#          files: |
+#            public/index.html
+#            build/app.js
 
 #      - name: Deploy
 #        uses: actions/deploy-pages@v3
