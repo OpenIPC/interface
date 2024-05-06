@@ -13,16 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check
-        run: |
-          ls
-          yarn --version
-      
-#      - name: Prepare
-#        run: |
-#          yarn install
-#          yarn run build
-
       - name: Build
         run: npm run deploy
 
@@ -30,6 +20,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          files: |
+            public/index.html
+            build/app.js
 
 #      - name: Deploy
 #        uses: actions/deploy-pages@v3
