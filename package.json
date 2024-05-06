@@ -1,5 +1,5 @@
 {
-  "name": "openipc-website",
+  "name": "openipc-interface",
   "type": "commonjs",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
