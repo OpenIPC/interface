@@ -13,8 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check
+        run: ls -la ; yarn --version
+      
       - name: Prepare
-        run: tree ; yarn install ; yarn run build
+        run: yarn install ; yarn run build
 
       - name: Build
         run: npm run deploy
