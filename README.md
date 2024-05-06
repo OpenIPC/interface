@@ -1,6 +1,4 @@
-## OpenIPC prototype
-
-Working example: https://deploy--oipc.netlify.app/
+## OpenIPC Common Interface Prototype
 
 This is the source code for the proposal variant of current [OpenIPC](https://openipc.org) official web site.
 
@@ -9,7 +7,7 @@ It reproduces the current [OpenIPC](https://openipc.org) site design and layout 
 Follow the link https://openipc.org to observ its actual state.
 
 
-## Technical details
+### Technical details
 This site is made using [Mithril.js](mithril.js.org) framework with intent to increase development process and further maintainability.
 
 The site is suituble for all screen resolutions and provide convenient modern user interface. 
@@ -40,6 +38,3 @@ If after you have installed all dependencies you still have problems with starti
 
 If errors still exist feel free to inform maintainer via email puer.robustus@gmail.com or [Telegram](https://t.me/LaikaPanda).
 
-
-## License
-[MIT](https://opensource.org/licenses/MIT)
