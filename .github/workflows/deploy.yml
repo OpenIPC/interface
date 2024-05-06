@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare
+        run: yarn run build ; yarn run build
+
       - name: Build
         run: npm run deploy
 
