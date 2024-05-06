@@ -18,10 +18,10 @@ jobs:
           ls
           yarn --version
       
-      - name: Prepare
-        run: |
-          yarn install
-          yarn run build
+#      - name: Prepare
+#        run: |
+#          yarn install
+#          yarn run build
 
       - name: Build
         run: npm run deploy
@@ -34,8 +34,8 @@ jobs:
 #      - name: Deploy
 #        uses: actions/deploy-pages@v3
 
-      - name: Push
-        run: |
-          git checkout gh-pages
-          git remote set-url --push origin https://actions:$GITHUB_TOKEN@github.com/flyrouter/interface
-          git push -f origin gh-pages
+#      - name: Push
+#        run: |
+#          git checkout gh-pages
+#          git remote set-url --push origin https://actions:$GITHUB_TOKEN@github.com/flyrouter/interface
+#          git push -f origin gh-pages
