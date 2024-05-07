@@ -1,6 +1,7 @@
 {
   "name": "openipc-interface",
   "type": "commonjs",
+  "packageManager": "yarn@4.2.1",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
     "build": "webpack --mode production -o ./build && cp -r ./public/supporters ./build",
