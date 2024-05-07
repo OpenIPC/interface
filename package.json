@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
     "build": "webpack --mode production -o ./build && cp -r ./public/supporters ./build",
-    "deploy": "yarn install && yarn build && tar cfz build.tgz build"
+    "deploy": "corepack enable && yarn install && yarn build && tar cfz build.tgz build"
   },
   "dependencies": {
     "@types/mithril": "^2.0.11",
