@@ -1,11 +1,14 @@
 {
-  "name": "openipc-website",
+  "name": "openipc-interface",
   "type": "commonjs",
-  "packageManager": "yarn@4.2.1",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
+<<<<<<< HEAD
     "build": "webpack --mode production -o ./build && cp -r ./public/supporters ./build",
-    "deploy": "yarn run build && tar -C build . -cf - | ssh bfzu@oipc-web-proposal.garagecam.ru tar -xf - -C /home/bfzu/oipc-web-proposal && echo 'Deploy seccessfully completed'"
+=======
+    "build": "webpack --mode production -o build",
+    "deploy": "yarn install && yarn build"
+>>>>>>> ad088d538089bf9b18d40e1dbf093a4d0ec844e6
   },
   "dependencies": {
     "@types/mithril": "^2.0.11",
