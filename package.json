@@ -6,7 +6,6 @@
 <<<<<<< HEAD
     "build": "webpack --mode production -o ./build && cp -r ./public/supporters ./build",
 =======
-    "build": "webpack --mode production -o build",
     "deploy": "yarn install && yarn build"
 >>>>>>> ad088d538089bf9b18d40e1dbf093a4d0ec844e6
   },
