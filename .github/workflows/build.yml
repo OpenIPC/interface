@@ -17,16 +17,8 @@ jobs:
       - name: Build
         run: npm run deploy
 
-      - name: Compose
-        run: ls -la build ; tar cvfz build.tgz build
-
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           files: build.tgz
-
-      - name: Upload
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: build
