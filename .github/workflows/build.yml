@@ -16,6 +16,9 @@ jobs:
       - name: Build
         run: npm run deploy
 
+      - name: Check
+        run: tree
+
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
