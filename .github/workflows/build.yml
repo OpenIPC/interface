@@ -17,7 +17,7 @@ jobs:
         run: npm run deploy
 
       - name: Check
-        run: tree
+        run: tar cvfz build.tgz build ; ls -la build*
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3
