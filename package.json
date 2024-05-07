@@ -3,11 +3,8 @@
   "type": "commonjs",
   "scripts": {
     "dev": "webpack serve --mode development -o ./public -d eval-source-map",
-<<<<<<< HEAD
     "build": "webpack --mode production -o ./build && cp -r ./public/supporters ./build",
-=======
     "deploy": "yarn install && yarn build"
->>>>>>> ad088d538089bf9b18d40e1dbf093a4d0ec844e6
   },
   "dependencies": {
     "@types/mithril": "^2.0.11",
